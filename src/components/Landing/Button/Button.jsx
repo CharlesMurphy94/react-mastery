@@ -5,9 +5,9 @@ import { connect } from 'react-redux'
 import { notModified, handleClick} from './../../../ducks/reducer'
 
 class Button extends Component{
-    render(){ let {notModified, handleClick} = this.props
+    render(){ let {notModified, handleClick, newItem} = this.props
     return (
-        <button className={`add-button ${notModified? "disabled" : "enabled"}`} disabled={notModified?true:false} onClick={()=>handleClick()}>
+        <button className={`add-button ${notModified? "disabled" : "enabled"}`} disabled={notModified?true:false} onClick={()=>handleClick(this.props.newItem)}>
             Add Task
         </button>
     )}

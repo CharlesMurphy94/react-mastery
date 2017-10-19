@@ -6,7 +6,7 @@ justify-content: space-around;
 height: 300px;
 }
 .to-do{
- width: 33.3%;
+ width: 50%;
  text-align: center;
  display: flex;
  flex-direction: column;
@@ -23,7 +23,7 @@ height: 300px;
 }
 
 .complete{
- width: 33.3%;
+ width: 50%;
  text-align: center;
  display: flex;
  flex-direction: column;
@@ -68,7 +68,9 @@ cursor: pointer;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: flex-start;
+justify-content: center;
+width: 100%;
+
 }
 .item-name{
     height: 20px;
@@ -79,21 +81,38 @@ justify-content: flex-start;
     border-color: #777;
     width: 70%;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    text-align: center;
 }
 .item-name:hover{
     color: darkgreen;
+    text-decoration: none;
 }
 .push-item{
     height: 20px;
     /* margin-top: -4px; */
     width: 30%;
-    text-align: right;
-    padding-right: 22px;
+    text-align: center;
+    /* padding-right: 22px; */
     cursor: pointer;
     /* padding-left: -15px; */
 }
 .push-item:hover{
     color: darkgreen;
+}
+.delete-item{
+    height: 20px;
+    /* margin-top: -4px; */
+    width: 30%;
+    text-align: center;
+    /* padding-right: 22px; */
+    cursor: pointer;
+    /* padding-left: -15px; */
+}
+.delete-item:hover{
+    color: darkred;
 }
 Button{
     margin-top: 20px;
